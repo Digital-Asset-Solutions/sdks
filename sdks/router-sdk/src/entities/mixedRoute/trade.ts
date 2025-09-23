@@ -376,7 +376,7 @@ export class MixedRouteTrade<TInput extends Currency, TOutput extends Currency, 
           const pair = pool
           poolIdentifierSet.add(Pair.getAddress(pair.token0, pair.token1))
         } else {
-          throw new Error('Unexpected pool type in route when constructing trade object')
+          throw new Error('Unexpected pool type in route when constructing trade object AAA')
         }
       }
     }

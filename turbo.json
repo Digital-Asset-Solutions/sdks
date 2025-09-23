@@ -1,10 +1,7 @@
 {
   "pipeline": {
     "lint": {
-      "inputs": [
-        "sdks/*/src/**.ts",
-        "sdks/*/src/**.tsx"
-      ]
+      "inputs": ["sdks/*/src/**.ts", "sdks/*/src/**.tsx"]
     },
     "build": {
       "inputs": [
@@ -13,17 +10,11 @@
         "sdks/*/src/**.ts",
         "sdks/*/src/**.tsx"
       ],
-      "outputs": [
-        "sdks/*/dist/**"
-      ]
+      "outputs": ["sdks/*/dist/**"]
     },
     "test": {
-      "dependsOn": [
-        "build"
-      ],
-      "inputs": [
-        "sdks/*/dist/**"
-      ]
+      "dependsOn": ["build"],
+      "inputs": ["sdks/*/dist/**"]
     },
     "release": {
       "dependsOn": []
