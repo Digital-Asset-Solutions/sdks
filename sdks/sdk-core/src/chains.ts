@@ -30,6 +30,7 @@ export enum ChainId {
   MONAD_TESTNET = 10143,
   SONEIUM = 1868,
   EDEN_TESTNET = 3735928814,
+  SOMNIA = 5031,
 }
 
 export const SUPPORTED_CHAINS = [
@@ -62,6 +63,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.MONAD_TESTNET,
   ChainId.SONEIUM,
   ChainId.EDEN_TESTNET,
+  ChainId.SOMNIA,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -76,4 +78,5 @@ export enum NativeCurrencyName {
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
   EDEN = 'ETH',
+  SOMNIA = 'SOMI',
 }
