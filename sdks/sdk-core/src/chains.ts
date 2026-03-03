@@ -31,6 +31,7 @@ export enum ChainId {
   SONEIUM = 1868,
   EDEN_TESTNET = 3735928814,
   SOMNIA = 5031,
+  EDEN = 714
 }
 
 export const SUPPORTED_CHAINS = [
@@ -64,6 +65,7 @@ export const SUPPORTED_CHAINS = [
   ChainId.SONEIUM,
   ChainId.EDEN_TESTNET,
   ChainId.SOMNIA,
+  ChainId.EDEN,
 ] as const
 export type SupportedChainsType = (typeof SUPPORTED_CHAINS)[number]
 
@@ -77,6 +79,7 @@ export enum NativeCurrencyName {
   BNB = 'BNB',
   AVAX = 'AVAX',
   ROOTSTOCK = 'RBTC',
-  EDEN = 'ETH',
+  EDEN_TESTNET = 'ETH',
   SOMNIA = 'SOMI',
+  EDEN = 'TIA',
 }

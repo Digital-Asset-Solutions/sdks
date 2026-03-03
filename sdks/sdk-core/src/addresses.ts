@@ -427,6 +427,16 @@ const EDEN_TESTNET_ADDRESSES: ChainAddresses = {
   swapRouter02Address: '0xCFDff26658fD838363dc9b0435443F175a83F6ce',
 }
 
+const EDEN_ADDRESSES: ChainAddresses = {
+  v3CoreFactoryAddress: '0x1cF0aae130d0371a7b3A8B93314BF5dc42241da3',
+  multicallAddress: '0xd12a780992c71894D68679a022B966560Cc69dF4',
+  quoterAddress: '0x3bE9C811f58326862DcA3cBCc7CC0245fCBf8e89',
+  v3MigratorAddress: '0xc5410A0FA42A3f3AC37d726D2Ed4c43B23800F0D',
+  tickLensAddress: '0x2c8c7d36d02ADE2F38b712eA2107C306384F3420',
+  nonfungiblePositionManagerAddress: '0xB0AAE7145126172088ad53dfc442fBC87d95952F',
+  swapRouter02Address: '0x9Ad7E2C4139413a46258AD1Fb923c084BD10D437'
+}
+
 const SOMNIA_ADDRESSES: ChainAddresses = {
   v3CoreFactoryAddress: '0xBC6646eA92e9142bC2a8fc2659032A92656686ac',
   multicallAddress: '0xD448241E2e32504264b984e2A946A008bb9E9104',
@@ -469,6 +479,7 @@ export const CHAIN_TO_ADDRESSES_MAP: Record<SupportedChainsType, ChainAddresses>
   [ChainId.SONEIUM]: SONEIUM_ADDRESSES,
   [ChainId.EDEN_TESTNET]: EDEN_TESTNET_ADDRESSES,
   [ChainId.SOMNIA]: SOMNIA_ADDRESSES,
+  [ChainId.EDEN]: EDEN_ADDRESSES,
 }
 
 /* V3 Contract Addresses */
